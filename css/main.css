@@ -13,7 +13,7 @@
 
 body{
 	font-family:'Open Sans',Arial,sans-serif;
-	background:#FFF;
+	background:#000;
 	font-weight:300;
 	height:100%;
 	margin:0;
@@ -36,7 +36,7 @@ a{color:#5173bd;}
 a:hover,a:focus{color:#5173bd;}
 
 .preloader{
-	background-color:#FFFFFF;
+	background-color:#000000;
 	position:fixed;
 	width:100%;
 	height:100%;
@@ -58,7 +58,7 @@ a:hover,a:focus{color:#5173bd;}
 	bottom:0;
 	height:2px;
 	width:100%;
-	background:#fff;
+	background:#000;
 	}
 	
 .pace .pace-progress{
@@ -569,23 +569,23 @@ padding: 40px 15px;
   height: 100%;
 }
 
-@media (min-aspect-ratio: 16/9) {
+@media (min-aspect-ratio: 240/103) {
   .fullscreen-bg__video {
     height: 300%;
     top: -100%;
   }
 }
 
-@media (max-aspect-ratio: 16/9) {
+@media (max-aspect-ratio: 240/103) {
   .fullscreen-bg__video {
     width: 300%;
     left: -100%;
   }
 }
 
-@media (max-width: 767px) {
+@media (max-width: 1150px) {
   .fullscreen-bg {
-    background: url('../img/videoframe.jpg') center center / cover no-repeat;
+    background: url('../images/header.png') center center / cover no-repeat;
   }
 
   .fullscreen-bg__video {
