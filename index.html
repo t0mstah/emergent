@@ -51,7 +51,7 @@
 
 			<div class="row">
 				<div class="col-md-6 col-sm-12 col-md-offset-3 subscribe">
-					<form class="form-horizontal" role="form" action="http://web.stanford.edu/~tfang17/emergent/success.html" id="subscribeForm" method="POST">
+					<form class="form-horizontal" role="form" action="email.php" id="subscribeForm" method="POST">
 						<div class="form-group">
 							<div class="col-md-7 col-sm-6 col-sm-offset-1 col-md-offset-0">
 								<input class="form-control input-lg" name="email" type="email" id="address" placeholder="Enter your email" data-validate="validate(required, email)" required="required">
@@ -82,6 +82,17 @@
      event.preventDefault();
       });
   });   
+
+  function submitForm() {
+  	  if(document.forms['subscribeForm'].onsubmit()) {
+  	  	showResultDiv();
+  	  	document.forms['contactus'].action='action1.php';
+        document.forms['contactus'].submit();
+		document.forms['contactus'].action='action2.php';
+        document.forms['contactus'].submit();
+  	  }
+// "http://web.stanford.edu/~tfang17/emergent/success.html"
+  }
 </script>
  
 </body>
